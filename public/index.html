@@ -2,7 +2,7 @@
 <html>
     <head>
        
-        <title>EmotionAI VideChat </title>
+        <title>EmotionAI VideoChat </title>
        
         <!-- minified CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css">
@@ -13,7 +13,7 @@
     </head>
     <body>
         <!--navbar-->
-        <nav class="navbar navbar-header navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-header navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <svg height="27" viewBox="0 0 945 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d)">
@@ -55,22 +55,22 @@
 
          <!-- Video element -->
          <div class="container-fluid">
-         <div class="row justify-content-center mx-md-n5">
-            <div class="col-12 col-sm-12 col-md-lg-12 col-lg-5 px-md-1 ">
-               <div class="border bg-light" align="center">
+         <div id="vidDiv" class="row justify-content-md-center">
+            <div class="col-sm-12 col-md-12 col-lg-6" align="center">
+               <div class="lpDiv border border-dark">
                    <video id="localVideo" autoplay muted style="width:480px;height:320px"></video>
                </div>
             </div>  
-            <div class="col-12 col-sm-12 col-md-lg-12 col-lg-5 px-md-1 ">
-               <div class="peerDiv border bg-light" style="position: relative;" align="center">
-                  <video id="peerVideo" autoplay style="width:480px;height:320px;" ></video>
-                  <canvas id="overlay">
+            <div class="col-sm-12 col-md-12 col-lg-6" align="center">
+               <div class="lpDiv border border-dark">
+                  <video id="peerVideo" class="vid" autoplay style="width:480px;height:320px;" ></video>
+                  <canvas id="overlay" class="vid" ></canvas>
                </div>
             </div>            
 </div>
 </div>
 <div class="row justify-content-md-center">
-<div class="col-10 btn-group btn-size mx-auto" role="group">
+<div class="col-8 col-sm-8 col-md-5 col-lg-6 btn-group btn-size mx-auto" role="group">
     <button id="mic-btn" type="button" class="btn btn-secondary"><ion-icon name="mic-off-outline" size="large"></ion-icon></button>
     <!-- <ion-icon name="mic-outline"></ion-icon> -->
     <button id="close-btn" type="button" class="btn btn-danger"><ion-icon name="close-circle-outline" size="large"></ion-icon></button>
