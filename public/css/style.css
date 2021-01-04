@@ -4,6 +4,7 @@
 } */
 
 #peerVideo{
+	width:480px;height:320px;
 	position: relative;
 	/* -webkit-transform: scaleX(-1);
 	transform: scaleX(-1); */
