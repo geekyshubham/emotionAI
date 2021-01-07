@@ -26,12 +26,12 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
 
             if (stream.getVideoTracks()[0].enabled) {    
                 stream.getVideoTracks()[0].enabled = false;
-                videoBtn.firstChild.name="videocam-off-outline";
+                videoBtn.firstChild.name="videocam-outline";
             }
         
             else {
                 stream.getVideoTracks()[0].enabled = true;
-                videoBtn.firstChild.name="videocam-outline";
+                videoBtn.firstChild.name="videocam-off-outline";
             }
         
             };
@@ -39,11 +39,11 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
         micBtn.onclick = function (){
             if(stream.getAudioTracks()[0].enabled){
                 stream.getAudioTracks()[0].enabled = false;
-                micBtn.firstChild.name = "mic-off-outline";
+                micBtn.firstChild.name = "mic-outline";
             }
             else{
                 stream.getAudioTracks()[0].enabled = true;
-                micBtn.firstChild.name="mic-outline";
+                micBtn.firstChild.name="mic-off-outline";
             }
         }
 
