@@ -4,7 +4,7 @@
 
 ## A Video Chat Web App with Realtime Emotion Recognition and Data Extraction 
 
-▶ LIVE ON [emotionai.ml](https://emotionai.ml)
+▶ LIVE ON [emotionai.ml](https://emotionai.ml) <br/>
 Note: as of now only two users can video chat to minimize the server load.
 
 ## HOW TO USE:
@@ -30,3 +30,4 @@ npm i
 - any C++ compiler (supporting C++17) or MSVC(for Windows).
 
 ## LICENSE
+GNU General Public License v3.0
